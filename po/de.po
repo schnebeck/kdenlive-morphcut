@@ -1,0 +1,93 @@
+# German translation of the Morph Cut composition for Kdenlive.
+#
+#
+#   Copyright (C) 2026 Thorsten Schnebeck <thorsten.schnebeck@gmx.net>
+#   Produced by Thorsten Schnebeck - the idea, the decisions, the testing.
+#   Written by Anthropic Claude Opus 5.5 - AI generated content.
+#
+#   Free software under the GNU General Public License, version 3 or later.
+#   There is no warranty, to the extent permitted by law. The full text is in
+#   LICENSES/GPL-3.0-or-later.txt.
+#
+# SPDX-FileCopyrightText: (C) 2026 Thorsten Schnebeck <thorsten.schnebeck@gmx.net>
+# SPDX-FileContributor: Anthropic Claude Opus 5.5 (AI generated content)
+# SPDX-License-Identifier: GPL-3.0-or-later
+msgid ""
+msgstr ""
+"Project-Id-Version: kdenlive-morphcut\n"
+"PO-Revision-Date: 2026-10-18 22:30+0200\n"
+"Last-Translator: Thorsten Schnebeck <thorsten.schnebeck@gmx.net>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: kdenlive/morphcut.xml
+msgid "Morph Cut"
+msgstr "Morph Cut"
+
+#: kdenlive/morphcut.xml
+msgid "Hides jump cuts (e.g. in interviews) by generating the frames between the outgoing and the incoming clip with AI frame interpolation (RIFE). Place it over the cut; 6–12 frames are recommended."
+msgstr "Kaschiert Jump Cuts (z.B. bei Interviews): Erzeugt die Bilder zwischen ausgehendem und eingehendem Clip per KI-Bildinterpolation (RIFE). Über den Schnitt legen; empfohlen sind 6–12 Bilder."
+
+#: kdenlive/morphcut.xml
+msgid "AI morph (RIFE),Freeze-frame dissolve"
+msgstr "KI-Morph (RIFE),Standbild-Überblendung"
+
+#: kdenlive/morphcut.xml
+msgid "Method"
+msgstr "Methode"
+
+#: kdenlive/morphcut.xml
+msgid "AI morph generates real intermediate frames. The freeze-frame dissolve only blends the last frame of A into the first frame of B."
+msgstr "KI-Morph erzeugt echte Zwischenbilder. Die Standbild-Überblendung blendet nur das letzte Bild von A in das erste Bild von B über."
+
+#: kdenlive/morphcut.xml
+msgid "RIFE 4.22 (recommended),RIFE 4.26,RIFE 4.6 (fast)"
+msgstr "RIFE 4.22 (empfohlen),RIFE 4.26,RIFE 4.6 (schnell)"
+
+#: kdenlive/morphcut.xml
+msgid "AI model"
+msgstr "KI-Modell"
+
+#: kdenlive/morphcut.xml
+msgid "Linear,Smooth,Smoother"
+msgstr "Linear,Weich,Sehr weich"
+
+#: kdenlive/morphcut.xml
+msgid "Easing"
+msgstr "Zeitverlauf"
+
+#: kdenlive/morphcut.xml
+msgid "Smooth accelerates the motion at the start and slows it down at the end, so the morph blends in less noticeably."
+msgstr "Weich beschleunigt die Bewegung am Anfang und bremst sie am Ende ab, so fügt sich der Morph unauffälliger ein."
+
+#: kdenlive/morphcut.xml
+msgid "Automatic,Lower track to upper track,Upper track to lower track"
+msgstr "Automatisch,Untere Spur nach obere Spur,Obere Spur nach untere Spur"
+
+#: kdenlive/morphcut.xml
+msgid "Direction"
+msgstr "Richtung"
+
+#: kdenlive/morphcut.xml
+msgid "Best quality (TTA, slower)"
+msgstr "Höchste Qualität (TTA, langsamer)"
+
+#: kdenlive/morphcut.xml
+msgid "UHD mode (4K footage)"
+msgstr "UHD-Modus (4K-Material)"
+
+#: kdenlive/morphcut.xml
+msgid "GPU 1 (Vulkan),GPU 2 (Vulkan),CPU"
+msgstr "GPU 1 (Vulkan),GPU 2 (Vulkan),CPU"
+
+#: kdenlive/morphcut.xml
+msgid "Device"
+msgstr "Rechengerät"
+
+#: kdenlive/morphcut.xml
+msgid "Apply clip effects to key frames"
+msgstr "Clip-Effekte auf Schlüsselbilder anwenden"

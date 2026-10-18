@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdenlive-morphcut\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kdenlive/morphcut.xml
+msgid "Morph Cut"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Hides jump cuts (e.g. in interviews) by generating the frames between the outgoing and the incoming clip with AI frame interpolation (RIFE). Place it over the cut; 6–12 frames are recommended."
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "AI morph (RIFE),Freeze-frame dissolve"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Method"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "AI morph generates real intermediate frames. The freeze-frame dissolve only blends the last frame of A into the first frame of B."
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "RIFE 4.22 (recommended),RIFE 4.26,RIFE 4.6 (fast)"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "AI model"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Linear,Smooth,Smoother"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Easing"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Smooth accelerates the motion at the start and slows it down at the end, so the morph blends in less noticeably."
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Automatic,Lower track to upper track,Upper track to lower track"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Direction"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Best quality (TTA, slower)"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "UHD mode (4K footage)"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "GPU 1 (Vulkan),GPU 2 (Vulkan),CPU"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Device"
+msgstr ""
+
+#: kdenlive/morphcut.xml
+msgid "Apply clip effects to key frames"
+msgstr ""
+

@@ -1,0 +1,89 @@
+# kdenlive-morphcut - data/transition_morphcut.yml
+# MLT metadata of the morphcut transition.
+#
+#   Copyright (C) 2026 Thorsten Schnebeck <thorsten.schnebeck@gmx.net>
+#   Produced by Thorsten Schnebeck - the idea, the decisions, the testing.
+#   Written by Anthropic Claude Opus 5.5 - AI generated content.
+#
+#   Free software under the GNU General Public License, version 3 or later.
+#   There is no warranty, to the extent permitted by law. The full text is in
+#   LICENSES/GPL-3.0-or-later.txt.
+#
+# SPDX-FileCopyrightText: (C) 2026 Thorsten Schnebeck <thorsten.schnebeck@gmx.net>
+# SPDX-FileContributor: Anthropic Claude Opus 5.5 (AI generated content)
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+schema_version: 7.0
+type: transition
+identifier: morphcut
+title: Morph Cut
+version: 1
+copyright: Thorsten Schnebeck
+license: GPLv3
+language: en
+tags:
+  - Video
+description: >
+  Hides jump cuts (e.g. in interviews) by synthesizing the frames between the
+  last frame of the outgoing clip and the first frame of the incoming clip
+  with RIFE AI frame interpolation (ncnn, Vulkan).
+notes: >
+  The transition must contain a clip boundary: an overlap of two clips on two
+  tracks, two adjoining clips on two tracks, or a cut on the track below. Key
+  frames are the outgoing clip at the first frame of the transition and the
+  incoming clip at the last frame; all frames in between are generated.
+parameters:
+  - identifier: model
+    argument: yes
+    title: Model
+    type: string
+    default: rife-v4.22
+    description: Name of a RIFE ncnn model directory, or an absolute path.
+  - identifier: mode
+    title: Mode
+    type: integer
+    minimum: 0
+    maximum: 1
+    default: 0
+    description: 0 = AI morph, 1 = freeze-frame dissolve (no AI)
+  - identifier: easing
+    title: Easing
+    type: integer
+    minimum: 0
+    maximum: 2
+    default: 1
+    description: 0 = linear, 1 = smooth, 2 = smoother
+  - identifier: direction
+    title: Direction
+    type: integer
+    minimum: 0
+    maximum: 2
+    default: 0
+    description: 0 = automatic, 1 = lower to upper track, 2 = upper to lower track
+  - identifier: gpu
+    title: GPU
+    type: integer
+    minimum: -1
+    default: 0
+    description: Vulkan device index, -1 = CPU
+  - identifier: tta
+    title: Test-time augmentation
+    type: boolean
+    default: 0
+  - identifier: uhd
+    title: UHD mode
+    type: boolean
+    default: 0
+  - identifier: threads
+    title: CPU threads
+    type: integer
+    minimum: 1
+    default: 4
+  - identifier: clip_effects
+    title: Apply clip effects to key frames
+    type: boolean
+    default: 1
+  - identifier: debug
+    title: Debug log
+    type: boolean
+    default: 0

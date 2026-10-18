@@ -1,0 +1,11 @@
+a7532fc3f9f8f008cd6eecd6f2ffe2a9698e0cf7 Sun Oct 23 17:06:10 2022 +0800
+https://github.com/nihui/rife-ncnn-vulkan
+
+Local modifications for kdenlive-morphcut:
+- rife.cpp: SPIR-V caches are kept per shader variant (tta / model generation),
+  so several engines with different settings can coexist in one process.
+- rife.cpp: model path buffers enlarged (snprintf, 4096 bytes).
+- warp.cpp: pack8 pipeline disabled (removed from ncnn's Vulkan backend).
+- rife.h/rife.cpp: configurable input padding for RIFE v4 (v4.25/v4.26 need 64),
+  taken from https://github.com/TNTwise/rife-ncnn-vulkan (MIT), which also
+  provides the newer v4.x models in models/.

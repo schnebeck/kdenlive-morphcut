@@ -1,0 +1,41 @@
+# kdenlive-morphcut - REUSE.toml
+# Licensing of files that cannot carry a header of their own (https://reuse.software).
+
+version = 1
+
+# rife-ncnn-vulkan, modified for kdenlive-morphcut (see third_party/rife/UPSTREAM)
+[[annotations]]
+path = "third_party/rife/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = [
+    "(C) 2020 nihui",
+    "(C) TNTwise (rife-ncnn-vulkan extensions)",
+    "(C) 2026 Thorsten Schnebeck <thorsten.schnebeck@gmx.net> (modifications)",
+]
+SPDX-License-Identifier = "MIT"
+
+# RIFE models, ncnn conversions
+[[annotations]]
+path = "models/rife-*/**"
+SPDX-FileCopyrightText = ["(C) hzwer (RIFE)", "(C) 2020 nihui", "(C) TNTwise"]
+SPDX-License-Identifier = "MIT"
+
+# MLT framework public headers
+[[annotations]]
+path = "third_party/mlt/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "(C) 2003-2026 Meltytech, LLC"
+SPDX-License-Identifier = "LGPL-2.1-or-later"
+
+# stb single-file libraries (public domain or MIT, at the user's choice)
+[[annotations]]
+path = "third_party/stb/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "(C) 2017 Sean Barrett"
+SPDX-License-Identifier = "MIT OR Unlicense"
+
+# Generated translation template and repository metadata
+[[annotations]]
+path = ["po/morphcut.pot", "models/README.md", ".gitignore", "REUSE.toml"]
+SPDX-FileCopyrightText = "(C) 2026 Thorsten Schnebeck <thorsten.schnebeck@gmx.net>"
+SPDX-License-Identifier = "GPL-3.0-or-later"

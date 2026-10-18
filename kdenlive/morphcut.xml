@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+  kdenlive-morphcut - kdenlive/morphcut.xml
+  Kdenlive UI description of the Morph Cut composition.
+
+    Copyright (C) 2026 Thorsten Schnebeck <thorsten.schnebeck@gmx.net>
+    Produced by Thorsten Schnebeck - the idea, the decisions, the testing.
+    Written by Anthropic Claude Opus 5.5 - AI generated content.
+
+    Free software under the GNU General Public License, version 3 or later.
+    There is no warranty, to the extent permitted by law. The full text is in
+    LICENSES/GPL-3.0-or-later.txt.
+
+  SPDX-FileCopyrightText: (C) 2026 Thorsten Schnebeck <thorsten.schnebeck@gmx.net>
+  SPDX-FileContributor: Anthropic Claude Opus 5.5 (AI generated content)
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<!DOCTYPE kpartgui>
+<transition tag="morphcut" id="morphcut">
+    <name>Morph Cut</name>
+    <description>Hides jump cuts (e.g. in interviews) by generating the frames between the outgoing and the incoming clip with AI frame interpolation (RIFE). Place it over the cut; 6–12 frames are recommended.</description>
+    <author>Thorsten Schnebeck (RIFE: hzwer, ncnn port: nihui, TNTwise)</author>
+    <parameter type="list" name="mode" default="0" paramlist="0;1">
+        <paramlistdisplay>AI morph (RIFE),Freeze-frame dissolve</paramlistdisplay>
+        <name>Method</name>
+        <comment><![CDATA[AI morph generates real intermediate frames. The freeze-frame dissolve only blends the last frame of A into the first frame of B.]]></comment>
+    </parameter>
+    <parameter type="list" name="model" default="rife-v4.22" paramlist="rife-v4.22;rife-v4.26;rife-v4.6">
+        <paramlistdisplay>RIFE 4.22 (recommended),RIFE 4.26,RIFE 4.6 (fast)</paramlistdisplay>
+        <name>AI model</name>
+    </parameter>
+    <parameter type="list" name="easing" default="1" paramlist="0;1;2">
+        <paramlistdisplay>Linear,Smooth,Smoother</paramlistdisplay>
+        <name>Easing</name>
+        <comment><![CDATA[Smooth accelerates the motion at the start and slows it down at the end, so the morph blends in less noticeably.]]></comment>
+    </parameter>
+    <parameter type="list" name="direction" default="0" paramlist="0;1;2">
+        <paramlistdisplay>Automatic,Lower track to upper track,Upper track to lower track</paramlistdisplay>
+        <name>Direction</name>
+    </parameter>
+    <parameter type="bool" name="tta" default="0">
+        <name>Best quality (TTA, slower)</name>
+    </parameter>
+    <parameter type="bool" name="uhd" default="0">
+        <name>UHD mode (4K footage)</name>
+    </parameter>
+    <parameter type="list" name="gpu" default="0" paramlist="0;1;-1">
+        <paramlistdisplay>GPU 1 (Vulkan),GPU 2 (Vulkan),CPU</paramlistdisplay>
+        <name>Device</name>
+    </parameter>
+    <parameter type="bool" name="clip_effects" default="1">
+        <name>Apply clip effects to key frames</name>
+    </parameter>
+</transition>
